@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.css';
-import AddTarget from './AddTarjeta';
+import './index.css';
+import AddTarget from '../AddTarjeta/AddTarjeta';
 
 const App = () => (
   <div className="app">

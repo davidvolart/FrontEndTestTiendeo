@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
-import '../App.css';
+import './index.css';
 import { connect } from 'react-redux'
-import Actions from '../redux/action'
+import Actions from '../../redux/action'
 
 class addTarget extends Component{
     
