@@ -20,17 +20,25 @@ const reducer = (state = [], action) => {
     }
 
     case ACTIONS.Types.DELETE_ITEM: {
+      
+      let index = _.findIndex(state, { id: action.payload });
+      if(index===-1){
+        return state;
+      }
       let newState = _.cloneDeep(state);
-      let index = _.findIndex(newState, { id: action.payload });
       newState.splice(index, 1);
       return newState;
     }
 
     case ACTIONS.Types.UPDATE_ITEM: {
+
+      let index = _.findIndex(state, { id: action.payload.id });
+
+      if(index===-1){
+        return state;
+      }
       
       let newState = _.cloneDeep(state);
-      let index = _.findIndex(newState, { id: action.payload.id });
-
       newState[index].title=action.payload.title;
       newState[index].description=action.payload.description;
       newState[index].url=action.payload.url;
