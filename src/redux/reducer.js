@@ -19,6 +19,13 @@ const reducer = (state = [], action) => {
       return newState;
     }
 
+    case ACTIONS.Types.DELETE_ITEM: {
+      let newState = _.cloneDeep(state);
+      let index = _.findIndex(newState, { id: action.payload });
+      newState.splice(index, 1);
+      return newState;
+    }
+
     default:
       return state;
   }

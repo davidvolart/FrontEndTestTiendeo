@@ -9,6 +9,7 @@ import './index.css';
                         <div className="container">
                             <img src={this.props.item.url} alt={this.props.item.title}/>
                             <div className="bottom-left">{this.props.item.title}</div>
+                            <div className="button-delete"><a href="#" onClick={this.props.deleteFunction}> DELETE </a></div>
                         </div>
                         <div className="description-box">
                             <p>{this.props.item.description}</p>

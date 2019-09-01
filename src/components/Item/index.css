@@ -35,3 +35,25 @@
     padding: 0 1%;
     word-break: break-all;
   }
+
+  .button-delete {
+    position: absolute;
+    width: 60px;
+    top: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+
+  .container:hover .button-delete{
+    opacity: 1;
+  }
+
+  .button-delete a {
+    width: 200px;
+    padding: 10px 1px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+  }
