@@ -36,10 +36,12 @@ class EditTarget extends Component{
         this.props.update(target);
     }
 
+
     render(){
         return(
             
             <div className="formEdit">
+                    <button id="cancelEdit" onClick={this.props.onSubmit}>Cancelar</button>
                     <h1>Editar tarjeta</h1>
                     <form
                         onSubmit={this.onSubmit}>
@@ -52,7 +54,7 @@ class EditTarget extends Component{
                         <div className="url">
                             <input id="url" type="text" name="url" placeholder="Imagen (Url)" value={this.state.url} onChange={this.onChange}/>
                         </div>
-                        <div className="addTarget">
+                        <div className="editTarget">
                             <button type="submit" >Guardar</button>
                         </div>
                     </form>

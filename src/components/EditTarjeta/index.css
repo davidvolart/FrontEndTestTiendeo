@@ -15,6 +15,7 @@
     color: #111;
     font-weight: bold;
     font-family: sans-serif;
+    margin-top: 5px;
   }
 
   input {
@@ -38,14 +39,14 @@
   margin-bottom: 2%;
 }
 
-.addTarget {
+.editTarget {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.addTarget button {
+.editTarget button {
   background-color: #da2d0f;
   color: #fff;
   border: 2px solid #fff;
@@ -58,8 +59,17 @@
   margin-bottom: 0.25em;
 }
 
-.addTarget button:hover {
+.editTarget button:hover {
   color: #e05947;
   background-color: #fff;
   border: 2px solid #e05947;
+}
+
+#cancelEdit {
+  height: 20px;  
+  width: 60px;
+  margin-left: 70%;
+  background-color: #da2d0f;
+  color: #fff;
+
 }

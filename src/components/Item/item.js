@@ -13,7 +13,7 @@ import EditTarget from '../EditTarjeta/editTarget'
             if(this.state.isEditMode){
                 return(
                     <div className="targets">
-                        <EditTarget item = {this.props.item} onSubmit = {() => this.handleUpdate()}/>
+                        <EditTarget item = {this.props.item} onSubmit = {() => this.handleUpdate()} cancel={() => this.cancel()}/>
                     </div>
                 );
             }else{
@@ -33,6 +33,7 @@ import EditTarget from '../EditTarjeta/editTarget'
             } 
         }
 
+       
         onEdit = (e) => {
             e.preventDefault();
             this.setState({
