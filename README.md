@@ -1,7 +1,7 @@
 Front End Tiendeo Test
 ============================
 
-This is a project done as a front end test at Tiendeo. This app is a that allows us to add or delete "Cards" with very basic information (title, description and image).
+This is a project done as a front end test at Tiendeo. This app is a that allows us to add, delete or edit "Cards" with very basic information (title, description and image).
 
 
 Setup
