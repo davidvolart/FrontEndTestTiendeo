@@ -67,4 +67,4 @@ class addTarget extends Component{
         create:  task => dispatch(Actions.createItem(task))
   })
 
-export default connect(mapDispatchToProps)(addTarget)
+export default connect(null,mapDispatchToProps)(addTarget)

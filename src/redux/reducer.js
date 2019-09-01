@@ -4,7 +4,7 @@ import _ from "lodash";
 
 const reducer = (state = [], action) => {
   switch (action.type) {
-      
+    
     case ACTIONS.Types.CREATE_ITEM: {
       let item = action.payload;
       let maxId = 0;
