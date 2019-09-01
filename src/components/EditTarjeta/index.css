@@ -1,0 +1,65 @@
+.formEdit{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px #555;
+    background-color: #ffffff;
+  }
+
+  h1 {
+    text-align: center;
+    width: 100%;
+    color: #111;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  input {
+    padding: 10px 10px;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid rgb(170, 157, 157);
+    width: 85%;
+  }
+
+  input::placeholder {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #999;
+  }
+
+.title,
+.description,
+.url{
+  margin-left: 1%;
+  margin-bottom: 2%;
+}
+
+.addTarget {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addTarget button {
+  background-color: #da2d0f;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+}
+
+.addTarget button:hover {
+  color: #e05947;
+  background-color: #fff;
+  border: 2px solid #e05947;
+}

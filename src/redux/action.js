@@ -1,6 +1,7 @@
 const Types = {
     CREATE_ITEM: "CREATE_ITEM",
-    DELETE_ITEM:  "DELETE_ITEM"
+    DELETE_ITEM:  "DELETE_ITEM",
+    UPDATE_ITEM: "UPDATE_ITEM"
 };
 
 const createItem = task => ({
@@ -13,8 +14,14 @@ const deleteItem = id => ({
   payload: id
 });
 
+const updateItem = target => ({
+  type: Types.UPDATE_ITEM,
+  payload: target
+});
+
   export default {
     createItem,
     deleteItem,
+    updateItem,
     Types,
   };

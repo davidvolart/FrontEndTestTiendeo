@@ -26,6 +26,18 @@ const reducer = (state = [], action) => {
       return newState;
     }
 
+    case ACTIONS.Types.UPDATE_ITEM: {
+      
+      let newState = _.cloneDeep(state);
+      let index = _.findIndex(newState, { id: action.payload.id });
+
+      newState[index].title=action.payload.title;
+      newState[index].description=action.payload.description;
+      newState[index].url=action.payload.url;
+
+      return newState;
+    }
+
     default:
       return state;
   }
