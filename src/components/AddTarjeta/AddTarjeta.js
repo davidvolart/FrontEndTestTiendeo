@@ -21,6 +21,7 @@ class addTarget extends Component{
         this.setState({ [e.target.name]: e.target.value });
     }
 
+
     onSubmit(e){
         e.preventDefault();
 
@@ -30,14 +31,15 @@ class addTarget extends Component{
             url: this.state.url ? this.state.url : 'https://i.blogs.es/2b7c9a/moon-colors/450_1000.jpg'
         }
 
-        this.props.create(target);
         
+        this.props.create(target);
         this.setState({
             title: '',
             description:'',
             url:''
-        });
+        }); 
     }
+
 
     render(){
         return(

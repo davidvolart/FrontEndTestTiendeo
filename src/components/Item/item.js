@@ -20,7 +20,7 @@ import EditTarget from '../EditTarjeta/editTarget'
                 return(
                     <div className="targets">
                         <div className="container">
-                            <img src={this.props.item.url} alt={this.props.item.title}/>
+                            <img src={this.props.item.url} onError={this.handleError} alt={this.props.item.title}/>
                             <div className="bottom-left">{this.props.item.title}</div>
                             <div className="button-edit"><a href="#" onClick={this.onEdit}> EDIT </a></div>
                             <div className="button-delete"><a href="#" onClick={this.props.deleteFunction}> DELETE </a></div>  
@@ -31,6 +31,10 @@ import EditTarget from '../EditTarjeta/editTarget'
                     </div>
                 );
             } 
+        }
+
+        handleError(e) {
+            e.target.src="https://i.blogs.es/2b7c9a/moon-colors/450_1000.jpg";
         }
 
        
