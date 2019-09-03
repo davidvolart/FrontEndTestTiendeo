@@ -28,10 +28,9 @@ class addTarget extends Component{
         const target = {
             title : this.state.title,
             description: this.state.description,
-            url: this.state.url ? this.state.url : 'https://i.blogs.es/2b7c9a/moon-colors/450_1000.jpg'
+            url: this.state.url
         }
 
-        
         this.props.create(target);
         this.setState({
             title: '',
@@ -39,7 +38,6 @@ class addTarget extends Component{
             url:''
         }); 
     }
-
 
     render(){
         return(
