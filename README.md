@@ -14,12 +14,12 @@ Setup
    $ cd FrontEndTestTiendeo
    ```
 
-2. Install dependencies
+3. Install dependencies
    ```bash
    $ npm install
    ```
 
-3. Start Project
+4. Start Project
    ```bash
    $ npm start
    ```
