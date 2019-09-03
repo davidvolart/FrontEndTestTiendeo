@@ -9,12 +9,17 @@ Setup
 
 1. Clone this repository
 
-2. Install dependencies
+2. Change directory
+   ```bash
+   $ cd FrontEndTestTiendeo
+   ```
+
+3. Install dependencies
    ```bash
    $ npm install
    ```
 
-3. Start Project
+4. Start Project
    ```bash
    $ npm start
    ```
