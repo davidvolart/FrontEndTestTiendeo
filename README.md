@@ -9,6 +9,11 @@ Setup
 
 1. Clone this repository
 
+2. Change directory
+ ```bash
+   $ cd FrontEndTestTiendeo
+   ```
+
 2. Install dependencies
    ```bash
    $ npm install
